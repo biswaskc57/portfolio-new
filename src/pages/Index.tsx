@@ -3,39 +3,30 @@ import React from 'react';
 import LinksHeader from '@/components/LinksHeader';
 import LinksContainer from '@/components/LinksContainer';
 
-// Hardcoded links data
+// Updated links data
 const links = [
   {
     id: '1',
-    title: 'React Documentation',
-    url: 'https://reactjs.org/docs/getting-started.html',
+    title: 'AI Community',
+    url: 'https://docs.google.com/document/d/1kaD5QG4RnqISO-sFWnqAzeLd68-eK_qZ6m-bNz1GU1I/edit?tab=t.nhxn444d5ntu',
   },
   {
     id: '2',
-    title: 'TypeScript Handbook',
-    url: 'https://www.typescriptlang.org/docs/',
+    title: 'AIBUM Guidelines',
+    url: 'https://docs.google.com/document/d/1yWBC7Anw7mLBznBxSi6CGpdVHxD7GlXKi7kEJN7wz-I/edit?tab=t.0#heading=h.oi1j8vmowids',
   },
   {
     id: '3',
-    title: 'Tailwind CSS Documentation',
-    url: 'https://tailwindcss.com/docs',
+    title: 'Innsbruck - Student Accommodation Info',
+    url: 'https://docs.google.com/document/d/1GfLEwKLd8LcOKEqqAeA1336omJwbcrAZY6sE3-5_UgM/edit?tab=t.0',
   },
   {
     id: '4',
-    title: 'MDN Web Docs',
-    url: 'https://developer.mozilla.org/en-US/',
-  },
-  {
-    id: '5',
-    title: 'GitHub',
-    url: 'https://github.com',
-  },
-  {
-    id: '6',
-    title: 'Stack Overflow',
-    url: 'https://stackoverflow.com',
+    title: 'Innsbruck - Accommodation Research using ChatGPT',
+    url: 'https://docs.google.com/document/d/1V_ccMqsyRGOFxyuckvA1XBr2LY4fjd2oYjWJuDMCqnA/edit?tab=t.0#heading=h.7jq35jmi1ggq',
   },
 ];
+
 
 const Index = () => {
   return (
