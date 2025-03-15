@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 import LanguageToggle from './LanguageToggle';
+import ThemeToggle from './ThemeToggle';
 import {
   Sheet,
   SheetContent,
@@ -32,7 +33,10 @@ const Navbar: React.FC = () => {
                 {t('nav.about')}
               </Link>
             </div>
-            <LanguageToggle />
+            <div className="flex items-center gap-4">
+              <ThemeToggle />
+              <LanguageToggle />
+            </div>
           </div>
           
           {/* Mobile Navigation */}
@@ -54,7 +58,8 @@ const Navbar: React.FC = () => {
                   <Link to="/about" className="text-foreground hover:text-primary text-lg transition-colors">
                     {t('nav.about')}
                   </Link>
-                  <div className="pt-4">
+                  <div className="pt-4 flex flex-col space-y-4">
+                    <ThemeToggle />
                     <LanguageToggle />
                   </div>
                 </div>

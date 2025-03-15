@@ -4,6 +4,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { Button } from '@/components/ui/button';
 import ContactDialog from '@/components/ContactDialog';
 import AnimatedSVG from '@/components/AnimatedSVG';
+import PersonSVG from '@/components/PersonSVG';
 import { Download } from 'lucide-react';
 
 const Home: React.FC = () => {
@@ -30,6 +31,7 @@ const Home: React.FC = () => {
           </div>
           <div className="relative order-1 md:order-2 flex justify-center md:justify-end">
             <div className="relative w-64 h-64 md:w-80 md:h-80">
+              <PersonSVG />
               <AnimatedSVG />
             </div>
           </div>
