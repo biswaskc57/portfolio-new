@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge";
 import { Button } from '@/components/ui/button';
 import { Project } from '@/types/Project';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const Projects: React.FC = () => {
   const { t } = useLanguage();
@@ -55,9 +56,12 @@ const Projects: React.FC = () => {
         <div className="absolute left-1/4 -top-8 w-5 h-5 bg-primary/20 rounded-full animate-bounce" style={{ animationDuration: '2s' }}></div>
       </div>
       
-      <h1 className="text-4xl font-bold mb-8 text-gradient-primary">
-        {t('nav.projects')}
-      </h1>
+      <div className="flex justify-between items-center mb-8">
+        <h1 className="text-4xl font-bold text-gradient-primary">
+          {t('nav.projects')}
+        </h1>
+        <ThemeToggle />
+      </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         {projects.map((project, index) => (
