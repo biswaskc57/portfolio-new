@@ -59,6 +59,10 @@
   html {
     @apply scroll-smooth;
   }
+  
+  code {
+    @apply bg-secondary/50 px-1.5 py-0.5 rounded text-primary font-mono text-sm;
+  }
 }
 
 @layer components {
@@ -93,6 +97,23 @@
   .text-gradient-primary {
     @apply bg-gradient-to-br from-primary via-primary/90 to-primary/70 bg-clip-text text-transparent;
   }
+  
+  /* Prose styling for content */
+  .prose {
+    @apply text-foreground;
+  }
+  
+  .prose code {
+    @apply bg-secondary/50 px-1.5 py-0.5 rounded text-primary font-mono text-sm;
+  }
+  
+  .prose a {
+    @apply text-primary hover:underline font-medium;
+  }
+  
+  .prose p {
+    @apply mb-4;
+  }
 }
 
 @layer utilities {
@@ -103,5 +124,55 @@
   
   .scrollbar-none::-webkit-scrollbar {
     display: none;
+  }
+  
+  /* Animation utilities */
+  @keyframes floating {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(0, -10px); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  .animate-floating {
+    animation: floating 6s ease-in-out infinite;
+  }
+  
+  @keyframes slide-down {
+    0% { 
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slide-down {
+    animation: slide-down 0.6s ease-out forwards;
+  }
+  
+  @keyframes slide-up {
+    0% { 
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+  
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
   }
 }
