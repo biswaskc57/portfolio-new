@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
-import { CircleWavyCheck, Lightbulb, Code, BookOpen } from 'lucide-react';
+import { CircleCheck, Lightbulb, Code, BookOpen } from 'lucide-react';
 
 const About: React.FC = () => {
   const { t } = useLanguage();
@@ -37,7 +37,7 @@ const About: React.FC = () => {
             
             <div className="bg-secondary/30 p-6 rounded-lg backdrop-blur-sm border border-border/50 hover:border-primary/50 transition-all duration-300">
               <div className="flex items-center mb-4">
-                <CircleWavyCheck className="h-6 w-6 mr-3 text-primary" />
+                <CircleCheck className="h-6 w-6 mr-3 text-primary" />
                 <h3 className="text-xl font-medium">Project Management</h3>
               </div>
               <p className="text-muted-foreground">Agile Methodologies, Jira, Confluence, Team Leadership</p>
