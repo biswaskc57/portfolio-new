@@ -6,6 +6,8 @@ import ContactDialog from '@/components/ContactDialog';
 import AnimatedSVG from '@/components/AnimatedSVG';
 import PersonSVG from '@/components/PersonSVG';
 import { Download } from 'lucide-react';
+import { FileAxis3d } from 'lucide-react';
+import Pdf from "../assets/Biswas_KC_CV.pdf";
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
@@ -22,10 +24,13 @@ const Home: React.FC = () => {
               {t('home.intro')}
             </div>
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              
+              <a href={Pdf} rel="noopener noreferrer" target="_blank">
               <Button className="flex items-center gap-2">
-                <Download className="h-4 w-4" />
-                {t('home.downloadCV')}
+                <FileAxis3d></FileAxis3d>
+                Resume
               </Button>
+                </a>
               <ContactDialog buttonVariant="outline" />
             </div>
           </div>
