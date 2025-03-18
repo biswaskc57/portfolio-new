@@ -18,18 +18,25 @@ const Projects: React.FC = () => {
   
   const projects: Project[] = [
     {
-      name: "CarShop",
-      image: carshop,
-      description: "A web application for personal trainers to manage clients and workouts.",
-      link: "https://biswaskc57.github.io/Casrshop/",
-      stacks: ["React", "Material UI"],
+      name: "Stock-predictor",
+      image: noPreview,
+      description: "A assignemnt for wolt for chekcing delivery price based on distane.",
+      link: "https://biswaskc57.github.io/wolt-assignment/",
+      stacks: ["ML", "Python", "React"],
     },
     {
-      name: "Blog App",
-      image: noPreview,
-      description: "A blogging platform where users can post and share blogs.",
-      link: "https://github.com/biswaskc57/Blog-application",
-      stacks: ["React", "Node.js", "Express", "MongoDB", "Cypress"],
+      name: "Food-delivery assignment",
+      image: carshop,
+      description: "A assignemnt for wolt for chekcing delivery price based on distane.",
+      link: "https://biswaskc57.github.io/wolt-assignment/",
+      stacks: ["React", "TypeScript", "Material UI", "Leaflet" ,"Jest"],
+    },
+    {
+      name: "Portfolio-demo",
+      image: carshop,
+      description: "Previous portfolio app",
+      link: "https://biswaskc57.github.io/Portfolio/",
+      stacks: ["React", "TypeScript", "Material UI"],
     },
     {
       name: "Weather Web App",
@@ -39,11 +46,11 @@ const Projects: React.FC = () => {
       stacks: ["React", "TypeScript"],
     },
     {
-      name: "Haaga-helia Mobile App",
-      image: hhApp,
-      description: "A mobile app designed for Haaga-helia university.",
-      link: "https://www.figma.com/proto/uKbsEmV8CqyM56cYWpKBdg/Prototyping_FinalProject?node-id=11-2&t=vYo9WJ09hXZTyVUl-1",
-      stacks: ["Figma", "Design", "UI/UX"],
+      name: "Blog App",
+      image: noPreview,
+      description: "A blogging platform where users can post and share blogs.",
+      link: "https://github.com/biswaskc57/Blog-application",
+      stacks: ["React", "Node.js", "Express", "MongoDB", "Cypress"],
     }
   ];
   
