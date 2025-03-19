@@ -1,3 +1,4 @@
+// vite.config.js
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import path from 'path';
@@ -8,6 +9,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
+    base: mode === 'development' ? '/' : '/portfolio-new/', // Adjust base path for production
     server: {
       host: '::',
       port: 8080,
@@ -27,6 +29,5 @@ export default defineConfig(({ mode }) => {
       // Alternatively, expose specific environment variables
       // 'process.env.SOME_KEY': JSON.stringify(env.VITE_SOME_KEY)
     },
-    base:''
   };
 });
