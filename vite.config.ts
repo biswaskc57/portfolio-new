@@ -27,5 +27,6 @@ export default defineConfig(({ mode }) => {
       // Alternatively, expose specific environment variables
       // 'process.env.SOME_KEY': JSON.stringify(env.VITE_SOME_KEY)
     },
+    base:''
   };
 });
