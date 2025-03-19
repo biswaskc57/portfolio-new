@@ -26,9 +26,8 @@ const ContactForm: React.FC<{ onSuccess?: () => void }> = ({ onSuccess }) => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+  // const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
-  console.log("siteKey",siteKey)
 
   const recaptchaRef = useRef<ReCAPTCHA>(null);
 
@@ -104,11 +103,11 @@ const ContactForm: React.FC<{ onSuccess?: () => void }> = ({ onSuccess }) => {
           </FormItem>
         )} />
 
-        <ReCAPTCHA
+        {/* <ReCAPTCHA
           ref={recaptchaRef}
           sitekey={siteKey}
           onChange={handleRecaptchaChange}
-        />
+        /> */}
         <FormMessage>{form.formState.errors.recaptcha?.message}</FormMessage>
 
         <Button type="submit" disabled={isSubmitting} className="w-full">
