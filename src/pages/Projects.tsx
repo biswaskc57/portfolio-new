@@ -13,7 +13,6 @@ const Projects: React.FC = () => {
   
   // Use placeholder images from Unsplash
   const carshop = "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1600&auto=format&fit=crop";
-  const hhApp = "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop";
   const noPreview = "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1600&auto=format&fit=crop";
   
   const projects: Project[] = [
@@ -21,7 +20,7 @@ const Projects: React.FC = () => {
       name: "Stock-predictor",
       image: noPreview,
       description: "A assignemnt for wolt for chekcing delivery price based on distane.",
-      link: "https://biswaskc57.github.io/wolt-assignment/",
+      link: "https://github.com/biswaskc57/stock-magic-template",
       stacks: ["ML", "Python", "React"],
     },
     {
