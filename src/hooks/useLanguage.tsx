@@ -105,7 +105,7 @@ const translations = {
           -teknologioista Frosmo Oy:ssä, ja erikoistun front-end-kehitykseen.
         </p>
         <p>
-          Opiskelen <a href="https://www.haaga-helia.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Haaga-helia ammattikorkeakoulussa</a> AI for Business Transformation maisteriohjelmassa.
+          Opiskelen <a href="https://www.haaga-helia.fi" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Haaga-helia ammattikorkeakoulussa</a> AI for Business Transformation maisteriohjelmassa.
         </p>
       </div>
     ),
@@ -187,7 +187,7 @@ const translations = {
           मलाई <code>React</code> र <code>TypeScript</code> मा ३ वर्षभन्दा बढीको व्यावसायिक अनुभव छ, र म फ्रन्ट-एन्ड विकासमा विशेषज्ञता राख्छु।
         </p>
         <p>
-          म <a href="https://www.haaga-helia.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Haaga-helia</a> मा AI for Business Transformation मा मास्टरको अध्ययन गर्दैछु।
+          म <a href="https://www.haaga-helia.fi" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Haaga-helia</a> मा AI for Business Transformation मा मास्टरको अध्ययन गर्दैछु।
         </p>
       </div>
     ),
